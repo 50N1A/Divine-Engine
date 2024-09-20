@@ -9,3 +9,6 @@ target_link_libraries(DivineEngine glfw)
 
 find_package(OpenGL REQUIRED)
 target_link_libraries(DivineEngine OpenGL::GL)
+
+add_subdirectory(external/glad)
+target_link_libraries(DivineEngine glad)
